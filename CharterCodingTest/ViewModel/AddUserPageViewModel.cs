@@ -7,6 +7,9 @@
 
 #endregion
 
+using CharterCodingTest.Models;
+using CharterCodingTest.Singleton;
+using CharterCodingTest.Validation;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GalaSoft.MvvmLight.Views;
@@ -23,6 +26,8 @@ namespace CharterCodingTest.ViewModel
         private readonly INavigationService _navigationService;
         private RelayCommand _addUserCommand;
         private RelayCommand _cancelCommand;
+        private UserModel _user = new UserModel();
+        private readonly UsersListSingleton _userListSingleton = UsersListSingleton.Instance;
 
         #endregion
 
@@ -52,6 +57,15 @@ namespace CharterCodingTest.ViewModel
             }
         }
 
+        /// <summary>
+        ///     Gets/sets the user.
+        /// </summary>
+        public UserModel User
+        {
+            get => _user;
+            set => _user = value;
+        }
+
         #endregion
 
         #region Methods
@@ -64,7 +78,6 @@ namespace CharterCodingTest.ViewModel
         public AddUserPageViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
-
         }
 
         #endregion
@@ -74,6 +87,28 @@ namespace CharterCodingTest.ViewModel
         /// </summary>
         private void addUser()
         {
+            var validationHelper = new UserValidation();
+
+            if (validationHelper.ValidatePassword(_user.Password) &&
+                validationHelper.ValidatePasswordLength(_user.Password) &&
+                validationHelper.ValidatePasswordNullOrWhiteSpace(_user.Password) &&
+                validationHelper.ValidatePasswordSequence(_user.Password) &&
+                validationHelper.ValidateUsername(_user.Username) &&
+                validationHelper.ValidateFirstName(_user.FirstName) &&
+                validationHelper.ValidateLastName(_user.LastName) &&
+                validationHelper.ValidateAge(_user.Age))
+            {
+                _userListSingleton.AddUser(new UserModel
+                {
+                    Username = _user.Username,
+                    Password = _user.Password,
+                    FirstName = _user.FirstName,
+                    LastName = _user.LastName,
+                    Age = _user.Age,
+                });
+
+                _navigationService.GoBack();
+            }
         }
 
         /// <summary>

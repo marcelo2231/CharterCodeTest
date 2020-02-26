@@ -8,6 +8,7 @@
 #endregion
 
 using CharterCodingTest.Models;
+using CharterCodingTest.Singleton;
 using CharterCodingTest.ViewModel.Base;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
@@ -26,6 +27,7 @@ namespace CharterCodingTest.ViewModel
         private RelayCommand _navigateToAddUserPageCommand;
         private readonly INavigationService _navigationService;
         private List<UserModel> _users;
+        private readonly UsersListSingleton _userListSingleton = UsersListSingleton.Instance;
 
         #endregion
 
@@ -84,16 +86,7 @@ namespace CharterCodingTest.ViewModel
         /// </summary>
         public void Initialize()
         {
-            Users = new List<UserModel>()
-            {
-                new UserModel
-                {
-                    FirstName = "Marcelo",
-                    LastName = "Almeida",
-                    Age = "26",
-                    Username = "marchiza"
-                }
-            };
+            Users = _userListSingleton.Users;
         }
 
         #endregion

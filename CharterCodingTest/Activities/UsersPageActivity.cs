@@ -11,11 +11,9 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 using CharterCodingTest.Adapters;
-using CharterCodingTest.Models;
 using CharterCodingTest.ViewModel;
 using GalaSoft.MvvmLight.Helpers;
 using GalaSoft.MvvmLight.Views;
-using System.Collections.Generic;
 
 namespace CharterCodingTest.Activities
 {

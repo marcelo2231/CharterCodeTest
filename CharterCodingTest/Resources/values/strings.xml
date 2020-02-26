@@ -4,6 +4,33 @@
     <string name="add_user">Add User</string>
     <string name="cancel">Cancel</string>
     <string name="name">Name:</string>
+    <string name="firstName">First Name:</string>
+    <string name="lastName">Last Name:</string>
     <string name="age">Age:</string>
     <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="passwordValidationError">
+      String must consist of a mixture of letters and numerical digits only, with at least one of each.
+    </string>
+    <string name="passwordLengthValidationError">
+      String must be between 5 and 12 characters in length.
+    </string>
+    <string name="passwordNullValidationError">
+      String cannot be empty or white space.
+    </string>
+    <string name="passwordSequenceValidationError">
+      String must not contain any sequence of characters immediately followed by the same sequence.
+    </string>
+    <string name="usernameValidationError">
+      String must contain only letters and must be between 4 and 16 characters and cannot be empty.
+    </string>
+    <string name="ageValidationError">
+      String must contain only digits and cannot be empty.
+    </string>
+    <string name="firstNameValidationError">
+      String must contain only letters and cannot be empty.
+    </string>
+    <string name="lastNameValidationError">
+      String must contain only letters and cannot be empty.
+    </string>
 </resources>
