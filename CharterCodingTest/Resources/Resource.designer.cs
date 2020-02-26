@@ -3247,14 +3247,11 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a0039
 			public const int ALT = 2131361849;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int AddUserButton = 2131361950;
+			// aapt resource value: 0x7f0a00c2
+			public const int AddUserButton = 2131361986;
 			
 			// aapt resource value: 0x7f0a003a
 			public const int CTRL = 2131361850;
-			
-			// aapt resource value: 0x7f0a009d
-			public const int CancelButton = 2131361949;
 			
 			// aapt resource value: 0x7f0a003b
 			public const int FUNCTION = 2131361851;
@@ -3267,9 +3264,6 @@ namespace CharterCodingTest
 			
 			// aapt resource value: 0x7f0a003e
 			public const int SYM = 2131361854;
-			
-			// aapt resource value: 0x7f0a00c2
-			public const int UsersListView = 2131361986;
 			
 			// aapt resource value: 0x7f0a008d
 			public const int action_bar = 2131361933;
@@ -3319,8 +3313,8 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a006b
 			public const int action_mode_close_button = 2131361899;
 			
-			// aapt resource value: 0x7f0a00c5
-			public const int action_settings = 2131361989;
+			// aapt resource value: 0x7f0a00c6
+			public const int action_settings = 2131361990;
 			
 			// aapt resource value: 0x7f0a00b2
 			public const int action_text = 2131361970;
@@ -3333,6 +3327,9 @@ namespace CharterCodingTest
 			
 			// aapt resource value: 0x7f0a002e
 			public const int add = 2131361838;
+			
+			// aapt resource value: 0x7f0a009e
+			public const int addUserButton = 2131361950;
 			
 			// aapt resource value: 0x7f0a00c1
 			public const int ageTextView = 2131361985;
@@ -3378,6 +3375,9 @@ namespace CharterCodingTest
 			
 			// aapt resource value: 0x7f0a0072
 			public const int buttonPanel = 2131361906;
+			
+			// aapt resource value: 0x7f0a009d
+			public const int cancelButton = 2131361949;
 			
 			// aapt resource value: 0x7f0a004c
 			public const int center = 2131361868;
@@ -3544,8 +3544,8 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a0070
 			public const int list_item = 2131361904;
 			
-			// aapt resource value: 0x7f0a00c4
-			public const int masked = 2131361988;
+			// aapt resource value: 0x7f0a00c5
+			public const int masked = 2131361989;
 			
 			// aapt resource value: 0x7f0a009c
 			public const int message = 2131361948;
@@ -3826,11 +3826,14 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a00be
 			public const int usernameTextView = 2131361982;
 			
+			// aapt resource value: 0x7f0a00c3
+			public const int usersListView = 2131361987;
+			
 			// aapt resource value: 0x7f0a001b
 			public const int view_offset_helper = 2131361819;
 			
-			// aapt resource value: 0x7f0a00c3
-			public const int visible = 2131361987;
+			// aapt resource value: 0x7f0a00c4
+			public const int visible = 2131361988;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int withText = 2131361859;

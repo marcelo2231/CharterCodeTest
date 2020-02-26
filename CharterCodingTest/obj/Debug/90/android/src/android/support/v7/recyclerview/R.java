@@ -4571,14 +4571,12 @@ containing a value of this type.
     }
     public static final class id {
         public static int ALT=0x7f0a0039;
-        public static int AddUserButton=0x7f0a009e;
+        public static int AddUserButton=0x7f0a00c2;
         public static int CTRL=0x7f0a003a;
-        public static int CancelButton=0x7f0a009d;
         public static int FUNCTION=0x7f0a003b;
         public static int META=0x7f0a003c;
         public static int SHIFT=0x7f0a003d;
         public static int SYM=0x7f0a003e;
-        public static int UsersListView=0x7f0a00c2;
         public static int action_bar=0x7f0a008d;
         public static int action_bar_activity_content=0x7f0a0001;
         public static int action_bar_container=0x7f0a008c;
@@ -4595,11 +4593,12 @@ containing a value of this type.
         public static int action_mode_bar=0x7f0a008a;
         public static int action_mode_bar_stub=0x7f0a0089;
         public static int action_mode_close_button=0x7f0a006b;
-        public static int action_settings=0x7f0a00c5;
+        public static int action_settings=0x7f0a00c6;
         public static int action_text=0x7f0a00b2;
         public static int actions=0x7f0a00bc;
         public static int activity_chooser_view_content=0x7f0a006c;
         public static int add=0x7f0a002e;
+        public static int addUserButton=0x7f0a009e;
         public static int ageTextView=0x7f0a00c1;
         public static int alertTitle=0x7f0a007f;
         public static int all=0x7f0a0064;
@@ -4615,6 +4614,7 @@ containing a value of this type.
         public static int browser_actions_menu_items=0x7f0a00a1;
         public static int browser_actions_menu_view=0x7f0a009f;
         public static int buttonPanel=0x7f0a0072;
+        public static int cancelButton=0x7f0a009d;
         public static int center=0x7f0a004c;
         public static int center_horizontal=0x7f0a0051;
         public static int center_vertical=0x7f0a0052;
@@ -4670,7 +4670,7 @@ containing a value of this type.
         public static int line3=0x7f0a001d;
         public static int listMode=0x7f0a0024;
         public static int list_item=0x7f0a0070;
-        public static int masked=0x7f0a00c4;
+        public static int masked=0x7f0a00c5;
         public static int message=0x7f0a009c;
         public static int middle=0x7f0a0038;
         public static int mini=0x7f0a0059;
@@ -4764,8 +4764,9 @@ containing a value of this type.
         public static int up=0x7f0a0009;
         public static int useLogo=0x7f0a002d;
         public static int usernameTextView=0x7f0a00be;
+        public static int usersListView=0x7f0a00c3;
         public static int view_offset_helper=0x7f0a001b;
-        public static int visible=0x7f0a00c3;
+        public static int visible=0x7f0a00c4;
         public static int withText=0x7f0a0043;
         public static int wrap_content=0x7f0a0035;
     }

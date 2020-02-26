@@ -19,7 +19,7 @@ namespace CharterCodingTest.Activities
     ///<summary>
     ///    The add user page activity.
     ///</summary>
-    [Activity(Label = "AddUserPage")]
+    [Activity(Label = "AddUserPageActivity")]
     public class AddUserPageActivity : ActivityBase
     {
         #region Fields
@@ -50,7 +50,7 @@ namespace CharterCodingTest.Activities
             get
             {
                 return _addUserButton
-                    ?? (_addUserButton = FindViewById<Button>(Resource.Id.AddUserButton));
+                   ?? (_addUserButton = FindViewById<Button>(Resource.Id.addUserButton));
             }
         }
 
@@ -62,7 +62,7 @@ namespace CharterCodingTest.Activities
             get
             {
                 return _cancelButton
-                    ?? (_cancelButton = FindViewById<Button>(Resource.Id.CancelButton));
+                  ?? (_cancelButton = FindViewById<Button>(Resource.Id.cancelButton));
             }
         }
 
@@ -76,7 +76,7 @@ namespace CharterCodingTest.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.UsersPage);
+            SetContentView(Resource.Layout.AddUserPage);
 
             // Binding
             AddUserButton.SetCommand("Click", ViewModel.AddUserCommand);

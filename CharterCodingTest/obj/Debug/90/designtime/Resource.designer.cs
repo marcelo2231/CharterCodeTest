@@ -3270,8 +3270,8 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7F0C0010
 			public const int action_mode_close_button = 2131492880;
 			
-			// aapt resource value: 0x7F010004
-			public const int action_settings = 2130771972;
+			// aapt resource value: 0x7F020008
+			public const int action_settings = 2130837512;
 			
 			// aapt resource value: 0x7F0C0004
 			public const int action_text = 2131492868;
@@ -3282,8 +3282,11 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7F0C0014
 			public const int add = 2131492884;
 			
-			// aapt resource value: 0x7F010003
-			public const int AddUserButton = 2130771971;
+			// aapt resource value: 0x7F020006
+			public const int AddUserButton = 2130837510;
+			
+			// aapt resource value: 0x7F020005
+			public const int ageTextView = 2130837509;
 			
 			// aapt resource value: 0x7F0C0015
 			public const int alertTitle = 2131492885;
@@ -3317,9 +3320,6 @@ namespace CharterCodingTest
 			
 			// aapt resource value: 0x7F0C001A
 			public const int buttonPanel = 2131492890;
-			
-			// aapt resource value: 0x7F010002
-			public const int CancelButton = 2130771970;
 			
 			// aapt resource value: 0x7F0C001B
 			public const int center = 2131492891;
@@ -3387,6 +3387,9 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7F0C0030
 			public const int filled = 2131492912;
 			
+			// aapt resource value: 0x7F020003
+			public const int firstNameTextView = 2130837507;
+			
 			// aapt resource value: 0x7F0C0031
 			public const int @fixed = 2131492913;
 			
@@ -3425,6 +3428,9 @@ namespace CharterCodingTest
 			
 			// aapt resource value: 0x7F0C003D
 			public const int largeLabel = 2131492925;
+			
+			// aapt resource value: 0x7F020004
+			public const int lastNameTextView = 2130837508;
 			
 			// aapt resource value: 0x7F0C0010
 			public const int left = 2131492880;
@@ -3690,6 +3696,12 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7F0C0095
 			public const int up = 2131493013;
 			
+			// aapt resource value: 0x7F020002
+			public const int usernameTextView = 2130837506;
+			
+			// aapt resource value: 0x7F020007
+			public const int usersListView = 2130837511;
+			
 			// aapt resource value: 0x7F0C0096
 			public const int view_offset_helper = 2131493014;
 			
@@ -3879,8 +3891,8 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7F0F001C
 			public const int abc_tooltip = 2131689500;
 			
-			// aapt resource value: 0x7F020002
-			public const int AddUserPage = 2130837506;
+			// aapt resource value: 0x7F010002
+			public const int AddUserPage = 2130771970;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int browser_actions_context_menu_page = 2131689473;
@@ -3966,11 +3978,11 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7F0F0036
 			public const int support_simple_spinner_dropdown_item = 2131689526;
 			
-			// aapt resource value: 0x7F020003
-			public const int UserListViewItem = 2130837507;
+			// aapt resource value: 0x7F010003
+			public const int UserListViewItem = 2130771971;
 			
-			// aapt resource value: 0x7F020004
-			public const int UsersPage = 2130837508;
+			// aapt resource value: 0x7F010004
+			public const int UsersPage = 2130771972;
 			
 			static Layout()
 			{
@@ -4146,8 +4158,8 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7F070004
 			public const int add_user = 2131165188;
 			
-			// aapt resource value: 0x7F070008
-			public const int age = 2131165192;
+			// aapt resource value: 0x7F070007
+			public const int age = 2131165191;
 			
 			// aapt resource value: 0x7F150028
 			public const int appbar_scrolling_view_behavior = 2132082728;
@@ -4173,17 +4185,14 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7F15002D
 			public const int fab_transformation_sheet_behavior = 2132082733;
 			
-			// aapt resource value: 0x7F070006
-			public const int firstName = 2131165190;
-			
 			// aapt resource value: 0x7F15002E
 			public const int hide_bottom_view_on_scroll_behavior = 2132082734;
 			
-			// aapt resource value: 0x7F070007
-			public const int lastName = 2131165191;
-			
 			// aapt resource value: 0x7F15002F
 			public const int mtrl_chip_close_icon_content_description = 2132082735;
+			
+			// aapt resource value: 0x7F070006
+			public const int name = 2131165190;
 			
 			// aapt resource value: 0x7F150030
 			public const int password_toggle_content_description = 2132082736;
@@ -4206,8 +4215,8 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7F150001
 			public const int status_bar_notification_info_overflow = 2132082689;
 			
-			// aapt resource value: 0x7F070009
-			public const int username = 2131165193;
+			// aapt resource value: 0x7F070008
+			public const int username = 2131165192;
 			
 			static String()
 			{

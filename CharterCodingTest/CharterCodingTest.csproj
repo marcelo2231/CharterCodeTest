@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\UserCustomAdapter.cs" />
-    <Compile Include="Adapters\UserViewHolder.cs" />
     <Compile Include="App.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -71,7 +70,7 @@
     <Compile Include="Activities\AddUserPageActivity.cs" />
     <Compile Include="Activities\UsersPageActivity.cs" />
     <Compile Include="ViewModel\AddUserPageViewModel.cs" />
-    <Compile Include="ViewModel\UsersPageViewModel .cs" />
+    <Compile Include="ViewModel\UsersPageViewModel.cs" />
     <Compile Include="ViewModel\Base\ViewModelLocator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -116,11 +115,13 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\UserListViewItem.axml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\UsersPage.axml">
       <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>

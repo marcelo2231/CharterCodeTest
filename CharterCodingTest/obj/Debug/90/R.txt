@@ -979,14 +979,12 @@ int drawable notify_panel_notification_icon_bg 0x7f02006b
 int drawable tooltip_frame_dark 0x7f02006c
 int drawable tooltip_frame_light 0x7f02006d
 int id ALT 0x7f0a0039
-int id AddUserButton 0x7f0a009e
+int id AddUserButton 0x7f0a00c2
 int id CTRL 0x7f0a003a
-int id CancelButton 0x7f0a009d
 int id FUNCTION 0x7f0a003b
 int id META 0x7f0a003c
 int id SHIFT 0x7f0a003d
 int id SYM 0x7f0a003e
-int id UsersListView 0x7f0a00c2
 int id action_bar 0x7f0a008d
 int id action_bar_activity_content 0x7f0a0001
 int id action_bar_container 0x7f0a008c
@@ -1003,11 +1001,12 @@ int id action_menu_presenter 0x7f0a0004
 int id action_mode_bar 0x7f0a008a
 int id action_mode_bar_stub 0x7f0a0089
 int id action_mode_close_button 0x7f0a006b
-int id action_settings 0x7f0a00c5
+int id action_settings 0x7f0a00c6
 int id action_text 0x7f0a00b2
 int id actions 0x7f0a00bc
 int id activity_chooser_view_content 0x7f0a006c
 int id add 0x7f0a002e
+int id addUserButton 0x7f0a009e
 int id ageTextView 0x7f0a00c1
 int id alertTitle 0x7f0a007f
 int id all 0x7f0a0064
@@ -1023,6 +1022,7 @@ int id browser_actions_menu_item_text 0x7f0a00a3
 int id browser_actions_menu_items 0x7f0a00a1
 int id browser_actions_menu_view 0x7f0a009f
 int id buttonPanel 0x7f0a0072
+int id cancelButton 0x7f0a009d
 int id center 0x7f0a004c
 int id center_horizontal 0x7f0a0051
 int id center_vertical 0x7f0a0052
@@ -1078,7 +1078,7 @@ int id line1 0x7f0a001c
 int id line3 0x7f0a001d
 int id listMode 0x7f0a0024
 int id list_item 0x7f0a0070
-int id masked 0x7f0a00c4
+int id masked 0x7f0a00c5
 int id message 0x7f0a009c
 int id middle 0x7f0a0038
 int id mini 0x7f0a0059
@@ -1172,8 +1172,9 @@ int id unlabeled 0x7f0a0050
 int id up 0x7f0a0009
 int id useLogo 0x7f0a002d
 int id usernameTextView 0x7f0a00be
+int id usersListView 0x7f0a00c3
 int id view_offset_helper 0x7f0a001b
-int id visible 0x7f0a00c3
+int id visible 0x7f0a00c4
 int id withText 0x7f0a0043
 int id wrap_content 0x7f0a0035
 int integer abc_config_activityDefaultDur 0x7f0f0000
