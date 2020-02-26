@@ -110,7 +110,6 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "CharterCodingTest.dll" comes first in this list. */
-		"CharterCodingTest.dll",
 		"CommonServiceLocator.dll",
 		"GalaSoft.MvvmLight.dll",
 		"GalaSoft.MvvmLight.Extras.dll",

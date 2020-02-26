@@ -15,7 +15,9 @@ foreground;obj\Debug\90\res\mipmap-anydpi-v26\ic_launcher_round.xml
 item;obj\Debug\90\res\menu\menu_main.xml
 item;obj\Debug\90\res\values\styles.xml
 LinearLayout;obj\Debug\90\res\layout\adduserpage.xml
+LinearLayout;obj\Debug\90\res\layout\userlistviewitem.xml
 LinearLayout;obj\Debug\90\res\layout\userspage.xml
+ListView;obj\Debug\90\res\layout\userspage.xml
 menu;obj\Debug\90\res\menu\menu_main.xml
 paths;C:\Users\archi\source\repos\CharterCodingTest\CharterCodingTest\obj\Debug\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;obj\Debug\90\res\values\colors.xml
@@ -25,3 +27,4 @@ resources;obj\Debug\90\res\values\strings.xml
 resources;obj\Debug\90\res\values\styles.xml
 string;obj\Debug\90\res\values\strings.xml
 style;obj\Debug\90\res\values\styles.xml
+TextView;obj\Debug\90\res\layout\userlistviewitem.xml

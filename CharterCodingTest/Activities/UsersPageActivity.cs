@@ -10,9 +10,12 @@
 using Android.App;
 using Android.OS;
 using Android.Widget;
+using CharterCodingTest.Adapters;
+using CharterCodingTest.Models;
 using CharterCodingTest.ViewModel;
 using GalaSoft.MvvmLight.Helpers;
 using GalaSoft.MvvmLight.Views;
+using System.Collections.Generic;
 
 namespace CharterCodingTest.Activities
 {
@@ -53,6 +56,18 @@ namespace CharterCodingTest.Activities
             }
         }
 
+        ///<summary>
+        ///    The User list view.
+        ///</summary>
+        public Button UsersListView
+        {
+            get
+            {
+                return _addUserButton
+                    ?? (_addUserButton = FindViewById<ListView>(Resource.Id.UsersListView));
+            }
+        }
+
         #endregion
 
         #region Methods
@@ -67,6 +82,18 @@ namespace CharterCodingTest.Activities
 
             // Binding
             AddUserButton.SetCommand("Click", ViewModel.NavigateToAddUserPageCommand);
+
+            var users = new List<UserModel>()
+            {
+                new UserModel
+                {
+                    FirstName = "Marcelo",
+                    LastName = "Almeida",
+                    Age = "26",
+                    Username = "marchiza"
+                }
+            };
+            var adapter = new UserCustomAdapter(this, users);
         }
 
         #endregion

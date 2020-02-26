@@ -3268,6 +3268,9 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a003e
 			public const int SYM = 2131361854;
 			
+			// aapt resource value: 0x7f0a00c2
+			public const int UsersListView = 2131361986;
+			
 			// aapt resource value: 0x7f0a008d
 			public const int action_bar = 2131361933;
 			
@@ -3316,8 +3319,8 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a006b
 			public const int action_mode_close_button = 2131361899;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int action_settings = 2131361984;
+			// aapt resource value: 0x7f0a00c5
+			public const int action_settings = 2131361989;
 			
 			// aapt resource value: 0x7f0a00b2
 			public const int action_text = 2131361970;
@@ -3330,6 +3333,9 @@ namespace CharterCodingTest
 			
 			// aapt resource value: 0x7f0a002e
 			public const int add = 2131361838;
+			
+			// aapt resource value: 0x7f0a00c1
+			public const int ageTextView = 2131361985;
 			
 			// aapt resource value: 0x7f0a007f
 			public const int alertTitle = 2131361919;
@@ -3472,6 +3478,9 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a005f
 			public const int filled = 2131361887;
 			
+			// aapt resource value: 0x7f0a00bf
+			public const int firstNameTextView = 2131361983;
+			
 			// aapt resource value: 0x7f0a005c
 			public const int @fixed = 2131361884;
 			
@@ -3517,6 +3526,9 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a00a5
 			public const int largeLabel = 2131361957;
 			
+			// aapt resource value: 0x7f0a00c0
+			public const int lastNameTextView = 2131361984;
+			
 			// aapt resource value: 0x7f0a0054
 			public const int left = 2131361876;
 			
@@ -3532,8 +3544,8 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a0070
 			public const int list_item = 2131361904;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int masked = 2131361983;
+			// aapt resource value: 0x7f0a00c4
+			public const int masked = 2131361988;
 			
 			// aapt resource value: 0x7f0a009c
 			public const int message = 2131361948;
@@ -3811,11 +3823,14 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0a002d
 			public const int useLogo = 2131361837;
 			
+			// aapt resource value: 0x7f0a00be
+			public const int usernameTextView = 2131361982;
+			
 			// aapt resource value: 0x7f0a001b
 			public const int view_offset_helper = 2131361819;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int visible = 2131361982;
+			// aapt resource value: 0x7f0a00c3
+			public const int visible = 2131361987;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int withText = 2131361859;
@@ -4091,7 +4106,10 @@ namespace CharterCodingTest
 			public const int support_simple_spinner_dropdown_item = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int UsersPage = 2130968633;
+			public const int UserListViewItem = 2130968633;
+			
+			// aapt resource value: 0x7f04003a
+			public const int UsersPage = 2130968634;
 			
 			static Layout()
 			{
@@ -4267,6 +4285,9 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0d0038
 			public const int add_user = 2131558456;
 			
+			// aapt resource value: 0x7f0d003b
+			public const int age = 2131558459;
+			
 			// aapt resource value: 0x7f0d0036
 			public const int app_name = 2131558454;
 			
@@ -4297,6 +4318,9 @@ namespace CharterCodingTest
 			// aapt resource value: 0x7f0d002f
 			public const int mtrl_chip_close_icon_content_description = 2131558447;
 			
+			// aapt resource value: 0x7f0d003a
+			public const int name = 2131558458;
+			
 			// aapt resource value: 0x7f0d0030
 			public const int password_toggle_content_description = 2131558448;
 			
@@ -4317,6 +4341,9 @@ namespace CharterCodingTest
 			
 			// aapt resource value: 0x7f0d0035
 			public const int status_bar_notification_info_overflow = 2131558453;
+			
+			// aapt resource value: 0x7f0d003c
+			public const int username = 2131558460;
 			
 			static String()
 			{
