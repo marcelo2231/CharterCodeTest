@@ -89,9 +89,9 @@ namespace CharterCodingTest.ViewModel
         {
             var validationHelper = new UserValidation();
 
-            if (validationHelper.ValidatePassword(_user.Password) &&
+            if (validationHelper.ValidatePasswordNullOrWhiteSpace(_user.Password) &&
+                validationHelper.ValidatePassword(_user.Password) &&
                 validationHelper.ValidatePasswordLength(_user.Password) &&
-                validationHelper.ValidatePasswordNullOrWhiteSpace(_user.Password) &&
                 validationHelper.ValidatePasswordSequence(_user.Password) &&
                 validationHelper.ValidateUsername(_user.Username) &&
                 validationHelper.ValidateFirstName(_user.FirstName) &&
@@ -108,6 +108,10 @@ namespace CharterCodingTest.ViewModel
                 });
 
                 _navigationService.GoBack();
+            }
+            else
+            {
+                // TODO: Pop up error message
             }
         }
 

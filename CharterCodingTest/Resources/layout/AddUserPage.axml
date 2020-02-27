@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
    
    <LinearLayout
         android:layout_width="match_parent"
@@ -13,46 +14,65 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp">
 
-    <TextView android:text="@string/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/usernameEntry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addUserDescription"/>
 
-    <TextView android:text="@string/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/passwordEntry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/usernameEntry"
+                android:hint="@string/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
 
-    <TextView android:text="@string/firstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/firstNameEntry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/passwordEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
 
-    <TextView android:text="@string/lastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/lastNameEntry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/firstNameTextInputLayout"
+            android:hint="@string/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/firstNameEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
 
-    <TextView android:text="@string/age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/ageEntry"
-        android:layout_width="match_parent"
-        android:inputType="number"
-        android:layout_height="wrap_content"/>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lastNameTextInputLayout"
+            android:hint="@string/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/lastNameEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/ageTextInputLayout"
+            android:hint="@string/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/ageEntry"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content"/>
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
 
 

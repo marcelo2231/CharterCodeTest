@@ -59,6 +59,8 @@ namespace CharterCodingTest.Singleton
         {
             Users.Add(new UserModel
             {
+                Username = "marchiza",
+                Password = "P@ssw0rd1",
                 FirstName = "Marcelo",
                 LastName = "Almeida",
                 Age = "26",
@@ -67,6 +69,8 @@ namespace CharterCodingTest.Singleton
 
             Users.Add(new UserModel
             {
+                Username = "k.ktdidit",
+                Password = "P@ssw0rd2",
                 FirstName = "Kaitlin",
                 LastName = "Almeida",
                 Age = "24",
@@ -75,6 +79,8 @@ namespace CharterCodingTest.Singleton
 
             Users.Add(new UserModel
             {
+                Username = "js1974",
+                Password = "P@ssw0rd3",
                 FirstName = "John",
                 LastName = "Smith",
                 Age = "46",
@@ -83,6 +89,8 @@ namespace CharterCodingTest.Singleton
 
             Users.Add(new UserModel
             {
+                Username = "kiandurant",
+                Password = "P@ssw0rd4",
                 FirstName = "Kian",
                 LastName = "Carlisle",
                 Age = "16",

@@ -9,6 +9,8 @@
 
 using Android.App;
 using Android.OS;
+using Android.Support.Design.Widget;
+using Android.Support.V4.Content.Res;
 using Android.Widget;
 using CharterCodingTest.Validation;
 using CharterCodingTest.ViewModel;
@@ -32,6 +34,11 @@ namespace CharterCodingTest.Activities
         private EditText _ageEditText;
         private EditText _usernameEditText;
         private EditText _passwordEditText;
+        private TextInputLayout _firstNameTextInputLayout;
+        private TextInputLayout _lastNameTextInputLayout;
+        private TextInputLayout _ageTextInputLayout;
+        private TextInputLayout _usernameTextInputLayout;
+        private TextInputLayout _passwordTextInputLayout;
 
         #endregion
 
@@ -133,6 +140,66 @@ namespace CharterCodingTest.Activities
             }
         }
 
+        ///<summary>
+        ///    The first name text input layout.
+        ///</summary>
+        public TextInputLayout FirstNameTextInputLayout
+        {
+            get
+            {
+                return _firstNameTextInputLayout
+                  ?? (_firstNameTextInputLayout = FindViewById<TextInputLayout>(Resource.Id.firstNameTextInputLayout));
+            }
+        }
+
+        ///<summary>
+        ///    The last name text input layout.
+        ///</summary>
+        public TextInputLayout LastNameTextInputLayout
+        {
+            get
+            {
+                return _lastNameTextInputLayout
+                  ?? (_lastNameTextInputLayout = FindViewById<TextInputLayout>(Resource.Id.lastNameTextInputLayout));
+            }
+        }
+
+        ///<summary>
+        ///    The age text input layout.
+        ///</summary>
+        public TextInputLayout AgeTextInputLayout
+        {
+            get
+            {
+                return _ageTextInputLayout
+                  ?? (_ageTextInputLayout = FindViewById<TextInputLayout>(Resource.Id.ageTextInputLayout));
+            }
+        }
+
+        ///<summary>
+        ///    The username text input layout.
+        ///</summary>
+        public TextInputLayout UsernameTextInputLayout
+        {
+            get
+            {
+                return _usernameTextInputLayout
+                  ?? (_usernameTextInputLayout = FindViewById<TextInputLayout>(Resource.Id.usernameTextInputLayout));
+            }
+        }
+
+        ///<summary>
+        ///    The password text input layout.
+        ///</summary>
+        public TextInputLayout PasswordTextInputLayout
+        {
+            get
+            {
+                return _passwordTextInputLayout
+                  ?? (_passwordTextInputLayout = FindViewById<TextInputLayout>(Resource.Id.passwordTextInputLayout));
+            }
+        }
+
         #endregion
 
         #region Methods
@@ -164,23 +231,23 @@ namespace CharterCodingTest.Activities
 
                 if (!validationHelper.ValidatePasswordNullOrWhiteSpace(PasswordEditText.Text))
                 {
-                    PasswordEditText.SetError(Resources.GetString(Resource.String.passwordNullValidationError),
-                        Resources.GetDrawable(Resource.Drawable.error));
+                    PasswordTextInputLayout.Error = Resources.GetString(Resource.String.passwordNullValidationError);
                 }
                 else if(!validationHelper.ValidatePassword(PasswordEditText.Text))
                 {
-                    PasswordEditText.SetError(Resources.GetString(Resource.String.passwordValidationError),
-                        Resources.GetDrawable(Resource.Drawable.error));
+                    PasswordTextInputLayout.Error = Resources.GetString(Resource.String.passwordValidationError);
                 }
                 else if (!validationHelper.ValidatePasswordLength(PasswordEditText.Text))
                 {
-                    PasswordEditText.SetError(Resources.GetString(Resource.String.passwordLengthValidationError),
-                        Resources.GetDrawable(Resource.Drawable.error));
+                    PasswordTextInputLayout.Error = Resources.GetString(Resource.String.passwordLengthValidationError);
                 }
                 else if (!validationHelper.ValidatePasswordSequence(PasswordEditText.Text))
                 {
-                    PasswordEditText.SetError(Resources.GetString(Resource.String.passwordSequenceValidationError),
-                        Resources.GetDrawable(Resource.Drawable.error));
+                    PasswordTextInputLayout.Error = Resources.GetString(Resource.String.passwordSequenceValidationError);
+                }
+                else
+                {
+                    PasswordTextInputLayout.Error = null;
                 }
 
             };
@@ -189,8 +256,11 @@ namespace CharterCodingTest.Activities
                 ViewModel.User.Username = UsernameEditText.Text;
                 if (!validationHelper.ValidateUsername(UsernameEditText.Text))
                 {
-                    UsernameEditText.SetError(Resources.GetString(Resource.String.usernameValidationError),
-                        Resources.GetDrawable(Resource.Drawable.error));
+                    UsernameTextInputLayout.Error = Resources.GetString(Resource.String.usernameValidationError);
+                }
+                else
+                {
+                    UsernameTextInputLayout.Error = null;
                 }
             };
 
@@ -198,8 +268,11 @@ namespace CharterCodingTest.Activities
                 ViewModel.User.FirstName = FirstNameEditText.Text;
                 if (!validationHelper.ValidateFirstName(FirstNameEditText.Text))
                 {
-                    FirstNameEditText.SetError(Resources.GetString(Resource.String.firstNameValidationError),
-                        Resources.GetDrawable(Resource.Drawable.error));
+                    FirstNameTextInputLayout.Error = Resources.GetString(Resource.String.firstNameValidationError);
+                }
+                else
+                {
+                    FirstNameTextInputLayout.Error = null;
                 }
             };
 
@@ -207,8 +280,11 @@ namespace CharterCodingTest.Activities
                 ViewModel.User.LastName = LastNameEditText.Text;
                 if (!validationHelper.ValidateLastName(LastNameEditText.Text))
                 {
-                    LastNameEditText.SetError(Resources.GetString(Resource.String.lastNameValidationError),
-                        Resources.GetDrawable(Resource.Drawable.error));
+                    LastNameTextInputLayout.Error = Resources.GetString(Resource.String.lastNameValidationError);
+                }
+                else
+                {
+                    LastNameTextInputLayout.Error = null;
                 }
             };
 
@@ -216,8 +292,11 @@ namespace CharterCodingTest.Activities
                 ViewModel.User.Age = AgeEditText.Text;
                 if (!validationHelper.ValidateAge(AgeEditText.Text))
                 {
-                    AgeEditText.SetError(Resources.GetString(Resource.String.ageValidationError),
-                        Resources.GetDrawable(Resource.Drawable.error));
+                    AgeTextInputLayout.Error = Resources.GetString(Resource.String.ageValidationError);
+                }
+                else
+                {
+                    AgeTextInputLayout.Error = null;
                 }
             };
         }
